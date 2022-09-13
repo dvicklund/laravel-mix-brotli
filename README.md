@@ -4,6 +4,23 @@
 [![Latest Version on NPM](https://img.shields.io/npm/v/laravel-mix-brotli.svg?style=flat-square)](https://npmjs.com/package/laravel-mix-brotli)
 [![npm](https://img.shields.io/npm/dt/laravel-mix-brotli.svg?style=flat-square)](https://www.npmjs.com/package/laravel-mix-brotli)
 
+NOTE: This fork only adds support for Laravel Mix 6.x and above by tweaking its package.json.  It is not published to npm and must be imported via direct github link, as shown here:
+
+```js
+// package.json
+{
+    "devDependencies": {
+        "laravel-mix-brotli": "github:dvicklund/laravel-mix-brotli"
+    }
+}
+```
+
+or,
+
+```bash
+npm i -D https://github.com/dvicklund/laravel-mix-brotli
+```
+
 A wrapper around brotli-webpack-plugin for Laravel Mix.
 
 ```js
@@ -19,7 +36,7 @@ mix.js('resources/js/app.js', 'public/js')
 
 ## Installation
 
-Before you get started, make sure you're using `laravel-mix` version 4 or higher.
+Before you get started, make sure you're using `laravel-mix` version 6 or higher.
 
 You can install the package with yarn or npm:
 
